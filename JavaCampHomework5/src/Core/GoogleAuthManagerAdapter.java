@@ -17,6 +17,6 @@ public class GoogleAuthManagerAdapter implements AuthService {
 
     @Override
     public void login(User user) {
-    googleAuthManager.login(user);
+        googleAuthManager.login(user);
     }
 }
