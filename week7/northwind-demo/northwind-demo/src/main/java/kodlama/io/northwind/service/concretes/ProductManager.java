@@ -1,5 +1,8 @@
 package kodlama.io.northwind.service.concretes;
 
+import kodlama.io.northwind.core.utilities.result.DataResult;
+import kodlama.io.northwind.core.utilities.result.Result;
+import kodlama.io.northwind.core.utilities.result.SuccessDataResult;
 import kodlama.io.northwind.entity.concretes.Product;
 import kodlama.io.northwind.repository.abstracts.ProductRepository;
 import kodlama.io.northwind.service.abstracts.ProductService;
@@ -14,18 +17,15 @@ public class ProductManager implements ProductService {
     private final ProductRepository productRepository;
 
     @Override
-    public List<Product> getAll() {
-        return productRepository.findAll();
+    public DataResult<List<Product>> getAll() {
+        return new SuccessDataResult<List<Product>>(productRepository.findAll(),"Data listed !");
     }
 
     @Override
-    public Product add(Product product) {
-        return productRepository.save(product);
+    public Result add(Product product) {
+        productRepository.save(product);
+        return new SuccessDataResult("Product added !");
     }
 
-    @Override
-    public Product update(Product product) {
-        return null;
-    }
 
 }
