@@ -19,8 +19,8 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     List<Product> getByProductNameStartsWith(String productName);
 
-    @Query("From Product where productName=:productName and categoryId=:categoryId")
-    List<Product> getByNameAndCategory(String productName, int categoryId);
+   /* @Query("From Product where productName=:productName and categoryId=:categoryId")
+    List<Product> getByNameAndCategory(String productName, int categoryId);*/
 
     //select * from products where product_name=bisey and categoryId=bisey
 

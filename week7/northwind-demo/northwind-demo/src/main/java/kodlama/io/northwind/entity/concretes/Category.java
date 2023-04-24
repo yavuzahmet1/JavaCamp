@@ -8,18 +8,21 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name="categories")
+@Table(name = "categories")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Category {
     @Id
-    @Column(name = "category_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private int categoryId;
-    @Column(name = "category_name")
+
     private String categoryName;
 
-    @OneToMany(mappedBy = "category_id")
+    @OneToMany(mappedBy = "categories")
     private List<Product> products;
+
+
 
 }
