@@ -1,10 +1,9 @@
 package kodlama.io.northwind.entity.concretes;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
-import javax.persistence.*;
+
 import java.util.List;
 
 @Entity
@@ -12,11 +11,12 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
+public class Category {//ana tablo
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "category_id")
     private int categoryId;
-
+    @Column(name = "category_name")
     private String categoryName;
 
     @OneToMany(mappedBy = "category")

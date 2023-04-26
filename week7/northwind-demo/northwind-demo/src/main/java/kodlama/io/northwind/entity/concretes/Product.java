@@ -1,10 +1,8 @@
 package kodlama.io.northwind.entity.concretes;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
-import javax.persistence.*;
 
 @Entity
 @Table(name = "products")
@@ -14,16 +12,16 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "product_id")
     private int id;
 
-    //private int categoryId;
-
+    @Column(name = "product_name")
     private String productName;
-
+    @Column(name = "unit_price")
     private double unitPrice;
-
-    private short unitInStock;
-
+    @Column(name = "units_in_stock")
+    private short unitsInStock;
+    @Column(name = "quantity_per_unit")
     private String quantityPerUnit;
 
     @ManyToOne()

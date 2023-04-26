@@ -20,6 +20,10 @@ public class ProductsController {
     public DataResult<List<Product>> getAllProducts() {
         return productService.getAll();
     }
+    /*@GetMapping
+    public List<Product> getAllProducts() {
+        return productService.getAll();
+    }*/
 
     @PostMapping("/add")
     public Result add(@RequestBody Product product) {
