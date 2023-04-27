@@ -1,5 +1,6 @@
 package kodlama.io.northwind.repository.abstracts;
 
+import kodlama.io.northwind.core.utilities.result.DataResult;
 import kodlama.io.northwind.entity.concretes.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -24,6 +25,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
     List<Product> getByNameAndCategory(String productName, int categoryId);
 
     //select * from products where product_name=bisey and categoryId=bisey
+
 
 
 }

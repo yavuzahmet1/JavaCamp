@@ -8,6 +8,7 @@ import kodlama.io.northwind.repository.abstracts.ProductRepository;
 import kodlama.io.northwind.service.abstracts.ProductService;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 
@@ -33,6 +34,12 @@ public class ProductManager implements ProductService {
         Pageable pageable = PageRequest.of(pageNo-1, pageSize);
 
         return new SuccessDataResult<List<Product>>(this.productRepository.findAll(pageable).getContent());
+    }
+
+    @Override
+    public DataResult<List<Product>> getAllSorted() {
+        Sort sort=Sort.by(Sort.Direction.ASC);
+        return new SuccessDataResult<List<Product>>(this.productRepository.findAll(sort),"That is right");
     }
 
     @Override
