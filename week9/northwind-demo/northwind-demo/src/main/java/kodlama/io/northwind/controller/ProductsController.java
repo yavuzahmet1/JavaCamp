@@ -2,6 +2,7 @@ package kodlama.io.northwind.controller;
 
 import kodlama.io.northwind.core.utilities.result.DataResult;
 import kodlama.io.northwind.core.utilities.result.Result;
+import kodlama.io.northwind.dtos.ProductWithCategoryDto;
 import kodlama.io.northwind.entity.concretes.Product;
 import kodlama.io.northwind.service.abstracts.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ public class ProductsController {
     public DataResult<List<Product>> getAllProducts() {
         return productService.getAll();
     }
+
 
     @PostMapping("/add")
     public Result add(@RequestBody Product product) {
@@ -44,6 +46,10 @@ public class ProductsController {
     @GetMapping("/getAllByPage")
     public DataResult<List<Product>> getAll(@RequestParam("pageNo")int pageNo,@RequestParam("pageSize")int pageSize){
         return productService.getAll(pageNo,pageSize);
+    }
+    @GetMapping("/getProductWithCategoryDetails")
+    public DataResult<List<ProductWithCategoryDto>> getProductWithCategoryDetails() {
+        return productService.getProductNameWithCategoryDetails();
     }
 
 

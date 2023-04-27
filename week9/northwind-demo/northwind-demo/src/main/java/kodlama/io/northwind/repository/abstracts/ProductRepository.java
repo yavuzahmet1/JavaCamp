@@ -1,6 +1,7 @@
 package kodlama.io.northwind.repository.abstracts;
 
 import kodlama.io.northwind.core.utilities.result.DataResult;
+import kodlama.io.northwind.dtos.ProductWithCategoryDto;
 import kodlama.io.northwind.entity.concretes.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -26,6 +27,9 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     //select * from products where product_name=bisey and categoryId=bisey
 
+    @Query("SELECT new kodlama.io.northwind.dtos.ProductWithCategoryDto(p.id,p.productName,c.categoryName) FROM Category c Inner Join c.products p")
+    List<ProductWithCategoryDto> getProductNameWithCategoryDetails();
 
+// new yazmamızdaki amaç constructoru çalıştırmaktır
 
 }

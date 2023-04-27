@@ -2,6 +2,7 @@ package kodlama.io.northwind.service.abstracts;
 
 import kodlama.io.northwind.core.utilities.result.DataResult;
 import kodlama.io.northwind.core.utilities.result.Result;
+import kodlama.io.northwind.dtos.ProductWithCategoryDto;
 import kodlama.io.northwind.entity.concretes.Product;
 import org.springframework.data.jpa.repository.Query;
 
@@ -9,7 +10,9 @@ import java.util.List;
 
 public interface ProductService {
     DataResult<List<Product>> getAll();
-    DataResult<List<Product>> getAll(int pageNo,int pageSize);
+
+    DataResult<List<Product>> getAll(int pageNo, int pageSize);
+
     DataResult<List<Product>> getAllSorted();
 
     //List<Product> getAll();
@@ -29,5 +32,7 @@ public interface ProductService {
     DataResult<List<Product>> getByProductNameStartsWith(String productName);
 
     DataResult<List<Product>> getByNameAndCategory(String productName, int categoryId);
+
+    DataResult<List<ProductWithCategoryDto>> getProductNameWithCategoryDetails();
 
 }

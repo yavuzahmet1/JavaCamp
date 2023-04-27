@@ -3,6 +3,7 @@ package kodlama.io.northwind.service.concretes;
 import kodlama.io.northwind.core.utilities.result.DataResult;
 import kodlama.io.northwind.core.utilities.result.Result;
 import kodlama.io.northwind.core.utilities.result.SuccessDataResult;
+import kodlama.io.northwind.dtos.ProductWithCategoryDto;
 import kodlama.io.northwind.entity.concretes.Product;
 import kodlama.io.northwind.repository.abstracts.ProductRepository;
 import kodlama.io.northwind.service.abstracts.ProductService;
@@ -31,15 +32,15 @@ public class ProductManager implements ProductService {
 
     @Override
     public DataResult<List<Product>> getAll(int pageNo, int pageSize) {
-        Pageable pageable = PageRequest.of(pageNo-1, pageSize);
+        Pageable pageable = PageRequest.of(pageNo - 1, pageSize);
 
         return new SuccessDataResult<List<Product>>(this.productRepository.findAll(pageable).getContent());
     }
 
     @Override
     public DataResult<List<Product>> getAllSorted() {
-        Sort sort=Sort.by(Sort.Direction.ASC,"productName");
-        return new SuccessDataResult<List<Product>>(this.productRepository.findAll(sort),"That is right");
+        Sort sort = Sort.by(Sort.Direction.ASC, "productName");
+        return new SuccessDataResult<List<Product>>(this.productRepository.findAll(sort), "That is right");
     }
 
     @Override
@@ -88,6 +89,11 @@ public class ProductManager implements ProductService {
     public DataResult<List<Product>> getByNameAndCategory(String productName, int categoryId) {
         return new SuccessDataResult<List<Product>>
                 (productRepository.getByNameAndCategory(productName, categoryId), "Data listed !");
+    }
+
+    @Override
+    public DataResult<List<ProductWithCategoryDto>> getProductNameWithCategoryDetails() {
+        return new SuccessDataResult<List<ProductWithCategoryDto>>(this.productRepository.getProductNameWithCategoryDetails(), "Data Listed !");
     }
 
 
