@@ -1,4 +1,4 @@
-package kodlama.io.northwind.repository.controller;
+package kodlama.io.northwind.controller;
 
 import kodlama.io.northwind.core.utilities.result.DataResult;
 import kodlama.io.northwind.core.utilities.result.Result;
