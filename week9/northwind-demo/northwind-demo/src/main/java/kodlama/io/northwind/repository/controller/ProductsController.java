@@ -1,4 +1,4 @@
-package kodlama.io.northwind.controller;
+package kodlama.io.northwind.repository.controller;
 
 import kodlama.io.northwind.core.utilities.result.DataResult;
 import kodlama.io.northwind.core.utilities.result.Result;
@@ -46,6 +46,10 @@ public class ProductsController {
     @GetMapping("/getAllByPage")
     public DataResult<List<Product>> getAll(@RequestParam("pageNo")int pageNo,@RequestParam("pageSize")int pageSize){
         return productService.getAll(pageNo,pageSize);
+    }
+    @GetMapping("/getallDesc")
+    public DataResult<List<Product>> getAllSorted() {
+        return productService.getAllSorted();
     }
     @GetMapping("/getProductWithCategoryDetails")
     public DataResult<List<ProductWithCategoryDto>> getProductWithCategoryDetails() {
