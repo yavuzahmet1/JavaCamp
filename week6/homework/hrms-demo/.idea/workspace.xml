@@ -5,20 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7607ec17-927f-4aef-baff-abe2871c1605" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/controller/CompanyPositionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/controller/EmployerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/controller/JobSeekerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/repository/CompanyPositionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/repository/EmployerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/repository/JobSeekerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/service/abstracts/CompanyPositionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/service/abstracts/EmployerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/service/abstracts/JobSeekerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/service/concretes/CompanyPositionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/service/concretes/EmployerManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/java/com/hrms/demo/service/concretes/JobSeekerManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrms-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hrms-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/layouts/BrandServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/layouts/CartSummary.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/layouts/Category.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/layouts/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/layouts/Navi.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/pages/BrandList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week10/camp/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/all-working/java-react-camp/week6/homework/hrms-demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "09c0e6953f787b6eb82ab8fac3410bce"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/all-working/java-react-camp/week6/homework/hrms-demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;09c0e6953f787b6eb82ab8fac3410bce&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="HrmsDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hrms-demo" />
@@ -80,6 +91,7 @@
       <updated>1682327329323</updated>
       <workItem from="1682327330711" duration="39000" />
       <workItem from="1682327410287" duration="1197000" />
+      <workItem from="1682594666722" duration="679000" />
     </task>
     <servers />
   </component>
