@@ -10,14 +10,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "companypositions")
+@Table(name="users")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class CompanyPosition {
+@NoArgsConstructor
+public class User {
     @Id
-    private Long positionId;
-    @Column(name = "position_name")
-    private String positionName;
+    @Column(name = "id")
+    private Long id;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "password")
+    private String password;
 
 }

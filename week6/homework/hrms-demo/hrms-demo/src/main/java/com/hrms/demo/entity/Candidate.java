@@ -8,21 +8,23 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
-@Table(name = "jobsekers")
+@Table(name = "candidates")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class JobSeeker {
+@NoArgsConstructor
+public class Candidate {
     @Id
-    private Long jobSeekerId;
-    @Column(name = "name")
-    private String name;
+    @Column(name = "id")
+    private Long id;
+    @Column(name = "first_name")
+    private String firstName;
     @Column(name = "last_name")
     private String lastName;
     @Column(name = "identity_number")
     private String identityNumber;
     @Column(name = "birth_year")
-    private int birthOfYear;
+    private Date birtOfYear;
 }
