@@ -5,13 +5,13 @@ import kodlama.io.northwind.core.utilities.result.Result;
 import kodlama.io.northwind.dtos.ProductWithCategoryDto;
 import kodlama.io.northwind.entity.concretes.Product;
 import kodlama.io.northwind.service.abstracts.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin
 public class ProductsController {
     private ProductService productService;
 
