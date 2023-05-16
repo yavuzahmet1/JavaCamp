@@ -36,4 +36,4 @@ export default function Navi() {
   )
 }
 
-//1.10.00 video 12'de kaldım
+
