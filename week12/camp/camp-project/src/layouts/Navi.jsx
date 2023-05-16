@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react';
 import { Button, Container, Menu } from 'semantic-ui-react'
 import CartSummary from './CartSummary'
 import SignedOut from './SignedOut'
 import SignedIn from './SignedIn'
 
+
 export default function Navi() {
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
+
+  function handleSignOut(params) {
+    setIsAuthenticated(false)
+  }
+  function handleSignIn(params) {
+    setIsAuthenticated(true)
+  }
   return (
     <div>
       <Menu inverted fixed="top">
@@ -17,12 +26,14 @@ export default function Navi() {
           />
           <Menu.Menu position='right'>
             <CartSummary />
-
-            <SignedOut />
-            <SignedIn />
+            {isAuthenticated?<SignedIn signOut={handleSignOut} />:<SignedOut signIn={handleSignIn}/>}
+            
+            
           </Menu.Menu>
         </Container>
       </Menu>
     </div>
   )
 }
+
+//1.10.00 video 12'de kaldım
